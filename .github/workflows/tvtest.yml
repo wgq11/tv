@@ -34,26 +34,15 @@ jobs:
       
       - name: 提交更改
         run: |
-          git config --local user.email ${{ secrets.GIT_MAIL }}
-          git config --local user.name "two2025"
+          git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config --local user.name "github-actions[bot]"
           git add .
           git commit *.txt -m "Add generated file"
           git commit *.m3u -m "Add generated file"
           #git pull --rebase
           git push -f
           
-      # Gitee 推送解决方案
-      - name: 准备 Gitee 推送
-        run: |
-          # 确保完整的提交历史
-          git fetch --unshallow || true
-          
-          # 添加 Gitee 远程
-          git remote add gitee https://${{ secrets.GITEE_USER }}:${{ secrets.GITEE_TOKEN }}@gitee.com/two2024/tv.git
-          
-          # 获取 Gitee 仓库的完整历史
-          git fetch gitee --unshallow || true
-          
+         
           # 重置为最新状态
           git reset --hard HEAD
 

@@ -42,11 +42,3 @@ jobs:
           #git pull --rebase
           git push -f
           
-         
-          # 重置为最新状态
-          git reset --hard HEAD
-
-      - name: 推送到 Gitee
-        run: |
-          # 强制推送到 Gitee
-          git push gitee HEAD:main --force

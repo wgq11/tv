@@ -1,7 +1,5 @@
 #EXTM3U
-#EXTINF:-1 group-title="卫视频道",四川卫视
-http://1.198.67.231:9901/tsfile/live/0123_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 group-title="卫视频道",旅游卫视
-http://1.198.67.231:9901/tsfile/live/0114_1.m3u8?key=txiptv&playlive=1&authid=0
-#EXTINF:-1 group-title="卫视频道",湖北卫视
-http://1.198.67.231:9901/tsfile/live/0132_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="央视频道",CCTV5
+http://1.198.67.231:9901/tsfile/live/1028_1.m3u8?key=txiptv&playlive=1&authid=0
+#EXTINF:-1 group-title="央视频道",CCTV11
+http://1.198.67.231:9901/tsfile/live/0011_1.m3u8?key=txiptv&playlive=1&authid=0
